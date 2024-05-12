@@ -1,7 +1,5 @@
 # ReactNative-SwipeableImage
 
-Welcome to the ReactNative-SwipeableImage project! This React Native component provides swipeable image functionality, mimicking a Tinder-like image swiping experience. It's perfect for applications where image browsing should be intuitive and engaging.
-
 ## Features
 
 - Easy to integrate with any React Native project.
