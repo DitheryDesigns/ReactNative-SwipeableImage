@@ -1,15 +1,3 @@
-# Super quick swipeable tinder image swiping component
-
-1. install dependencies: expo install react-native-gesture-handler react-native-reanimated
-
-2. wrap app with <GestureHandlerRootView style={{ flex: 1 }}>
-
-3. setup swipeable
-```
-
-I will expand on this README to make it more comprehensive, covering sections such as a detailed project introduction, installation steps, usage examples, and contributing guidelines. Here's the enhanced README template:
-
-```markdown
 # ReactNative-SwipeableImage
 
 Welcome to the ReactNative-SwipeableImage project! This React Native component provides swipeable image functionality, mimicking a Tinder-like image swiping experience. It's perfect for applications where image browsing should be intuitive and engaging.
