@@ -17,29 +17,30 @@ Follow these steps to integrate the swipeable image component into your React Na
 npm install react-native-gesture-handler react-native-reanimated
 # If using Expo
 expo install react-native-gesture-handler react-native-reanimated
-
-# Wrap your app component
-Wrap your root component with <GestureHandlerRootView style={{ flex: 1 }}>
 ```
 
-## Usage
-
-Here is a simple example of how to use the SwipeableImage component in your application:
+## Wrap your component in a GestureHandlerRootView
 
 ```javascript
-import SwipeableImage from 'path-to-component/SwipeableImage';
+const images = [
+  `https://fastly.picsum.photos/id/22/428/926.jpg?hmac=cO3y3vLEmYwq4sI_0GHWAEhjdId5baUwd3UR2Yn4RPA`,
+  `https://fastly.picsum.photos/id/1073/428/926.jpg?hmac=rcRmwul7vymSMMAMUS7fYNWruiV8qpDX1rmDmCcrlrY`,
+  `https://fastly.picsum.photos/id/80/428/926.jpg?hmac=_fEMeJ8oLNwl0ur1p8ZgZwiUl8cKE4Ea5v58ynIdwk0`,
+  `https://fastly.picsum.photos/id/337/428/926.jpg?hmac=2qMOozwz3GTXSZ8kHEp6u83DlHvKNEbAQPG1WXHJUOE`,
+];
 
-function App() {
+export default function App() {
   return (
-    <SwipeableImage
-      images={imageDataArray}
-      onSwipeOff={(direction, index) => console.log(`Swiped ${direction} on image at index ${index}`)}
-    />
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <View style={styles.container}>
+        {/* Requires an array of images */}
+        <SwipeableImage images={images} />
+        <StatusBar style="auto" />
+      </View>
+    </GestureHandlerRootView>
   );
 }
 ```
-
-Replace `path-to-component` with the actual path where the `SwipeableImage` component is located, and `imageDataArray` with your array of images.
 
 ## Contributing
 
