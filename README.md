@@ -40,17 +40,6 @@ export default function App() {
 }
 ```
 
-## Contributing
-
-Contributions to enhance ReactNative-SwipeableImage are welcome. Here’s how you can contribute:
-
-- Fork the repository.
-- Create a new branch (`git checkout -b feature-branch`).
-- Make your changes.
-- Commit your changes (`git commit -am 'Add some feature'`).
-- Push to the branch (`git push origin feature-branch`).
-- Create a new Pull Request.
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details.
