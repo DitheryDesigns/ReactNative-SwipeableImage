@@ -14,6 +14,8 @@ Follow these steps to integrate the swipeable image component into your React Na
 
 ```bash
 # Install dependencies
+npm install react-native-gesture-handler react-native-reanimated
+# If using Expo
 expo install react-native-gesture-handler react-native-reanimated
 
 # Wrap your app component
